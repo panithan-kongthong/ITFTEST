@@ -2,9 +2,9 @@
 	$conn = mysqli_connect('hololiveth.mysql.database.azure.com', 'panithan@hololiveth', 'folk_zaza2020', 'ITFLab', 3306);
 
 	$product = $_POST['product'];
-    $price = $_POST['price'];
-    $discount = $_POST['discount'];
-    $total = $price*(100-$discount)
+    	$price = $_POST['price'];
+    	$discount = $_POST['discount'];
+    	$total = $price*(100-$discount);
 	$id = $_POST['id'];
 
     $sql = 'UPDATE labtest SET Product = "'.$product.'", Price = "'.$price.'", Discount = "'.$discount.'", Total = "'.$total.'" WHERE ID = '.$id.'';
