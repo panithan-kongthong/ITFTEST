@@ -1,12 +1,13 @@
 <?php
 	$conn = mysqli_connect('hololiveth.mysql.database.azure.com', 'panithan@hololiveth', 'folk_zaza2020', 'ITFLab', 3306);
 
-	$name = $_POST['name'];
-	$comment = $_POST['comment'];
-	$link = $_POST['link'];
+	$product = $_POST['product'];
+    $price = $_POST['price'];
+    $discount = $_POST['discount'];
+    $total = $price*(100-$discount)
 	$id = $_POST['id'];
 
-    $sql = 'UPDATE labtest SET Name = "'.$name.'", Comment = "'.$comment.'", Link = "'.$link.'" WHERE ID = '.$id.'';
+    $sql = 'UPDATE labtest SET Product = "'.$product.'", Price = "'.$price.'", Discount = "'.$discount.'", Total = "'.$total.'" WHERE ID = '.$id.'';
     
 ?>
 
