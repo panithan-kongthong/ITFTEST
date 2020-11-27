@@ -4,7 +4,7 @@
 	$product = $_POST['product'];
     	$price = $_POST['price'];
     	$discount = $_POST['discount'];
-    	$total = $price*(100-$discount);
+    	$total = $price*((100-$discount)/100);
 	$id = $_POST['id'];
 
     $sql = 'UPDATE labtest SET Product = "'.$product.'", Price = "'.$price.'", Discount = "'.$discount.'", Total = "'.$total.'" WHERE ID = '.$id.'';
