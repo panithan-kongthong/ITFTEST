@@ -10,7 +10,7 @@ if (mysqli_connect_errno($conn)) {
 $product = $_POST['product'];
 $price = $_POST['price'];
 $discount = $_POST['discount'];
-$total = $price*(100-$discount)
+$total = $price*(100-$discount);
 
 
 $sql = "INSERT INTO labtest (Product , Price , Discount, Total) VALUES ('$product', '$price', '$discount', '$total')";
