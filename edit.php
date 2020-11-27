@@ -33,7 +33,7 @@
                   <label class="m-3" for="product">Product</label>
                   <input type="text" class="form-control" name="product" id="idProduct" value="<?php echo $data['Product'];?>">
                   <label class="m-3" for="price">Price</label>
-                  <textarea rows="5" class="form-control" cols="20" name="price" id="idPrice" ><?php echo $data['Price'];?></textarea><br>
+                  <input type="text" class="form-control" name="Price" id="idPrice" value="<?php echo $data['Price'];?>">
                   <label class="m-3" for="discount">Discount</label>
                   <input type="text" class="form-control" name="discount" id="idDiscount" value="<?php echo $data['Discount'];?>">
                   <input class="btn btn-primary mt-5" type="submit" id="commentBtn">
